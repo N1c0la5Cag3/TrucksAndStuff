@@ -11,12 +11,13 @@ package fuelefficiency;
  * @author luoos2514
  */
 public class Car extends Vehicle{
-    public Car(){
-        super();
-    }
 
-    public double getDistance(double litreally) {
+    /*Finds how far Lightning McQueen can travel based on the given fuel
+    PRE: A double must be passed as an argument
+    POST: Lightning McQueen's distance travelled will be printed out
+    */
+    public void getDistance(double litreally) {
         double kilometrage = (100/9.4)*litreally;
-        return kilometrage;
+        System.out.println("Lightning McQueen: " + kilometrage + " km");
     }
 }

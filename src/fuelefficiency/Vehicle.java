@@ -11,5 +11,8 @@ package fuelefficiency;
  * @author luoos2514
  */
 public abstract class Vehicle {
-    public abstract double getDistance(double kilometrage);
+    /*getDistance will be overwritten by each of it's subclasses, where they
+    will each be used to find the amount of distance the class's respective
+    vehicle can travel based on the given fuel*/
+    public abstract void getDistance(double litreally);
 }

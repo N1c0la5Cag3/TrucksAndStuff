@@ -12,12 +12,12 @@ package fuelefficiency;
  */
 public class Motorcycle extends Vehicle{
     
-    public Motorcycle(){
-        super();
-    }
-    
-    public double getDistance(double litreally) {
+    /*Finds how far the Stingray can travel based on the given fuel
+    PRE: A double must be passed as an argument
+    POST: The Stingray's distance travelled will be printed out
+    */
+    public void getDistance(double litreally) {
         double kilometrage = (100/6.3)*litreally;
-        return kilometrage;
+        System.out.println("Stingray: " + kilometrage + " km");
     }
 }
